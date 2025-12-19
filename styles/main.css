@@ -1,0 +1,392 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccccc;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%; /* 16px (12pt) default font size | 1em is 100% default font size */
+    color: #000000;
+}
+
+
+h1{
+    padding-bottom: 10px;
+    font-size: 2.25em; /* 36px / 16px = 2.25em or 225%  */
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+nav h1{
+    font-style: italic;
+    color: rgb(149, 255, 0);
+    padding-right: 650px;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-size: 2.125em; /* 34px */
+    font-weight: normal;
+}
+
+h3{
+    padding-bottom: 10px;
+    font-size: 2em; /* 32px */
+    font-weight: normal;
+}
+
+p{
+    padding-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* ul{
+    padding-left: 40px;
+    margin-bottom: 16px;
+} */
+
+img{
+    max-width: 50%;
+    height: auto;
+}
+
+.container{
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    /* background-color: palevioletred; */
+    flex: 1 0 100%;
+    height: 600px;
+    background-image: url(../images/homemain.png);
+    background-repeat: no-repeat;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    flex: 1 0 100%;
+
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* margin-bottom: 0; */
+}
+
+nav a:link, nav a:visited{
+    background-color: rgb(149, 255, 0)  ;
+    text-decoration: none;
+    color: #000000;
+    /* width: 150px; */
+    display: block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:active{
+    background-color: #333;
+}
+
+
+main{
+    background-color: rgb(0, 0, 0);
+    flex: 1 1 70%; /* 800px - target / context = result */
+    padding: 5px 10px;
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+
+main h1{
+    color: rgb(149, 255, 0);
+}
+
+
+/* portfolio sections start here */
+
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    padding:200px 50px;
+
+}
+
+.portfolio p{
+    text-align: center;
+    font-size: 150%;
+}
+
+aside{
+    background-color: rgb(149, 255, 0);
+    flex: 70%; /* 400px - target / context (1200) = result */
+    padding: 20px 20px;
+    color: #000000;
+}
+
+
+.portfolio section {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(204, 255, 0, 0.19);
+  text-align: center;
+  padding: 50px 10px;
+  margin: 10px;
+}
+
+img {width: 100%}
+.portfolio section:hover{
+    color: rgb(149, 255, 0);
+}
+
+/* portfolio sections end here */
+
+
+
+/* about sections start here */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #c7fd61;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+align-items: center;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #730000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* about sections end here */
+
+
+/* contact sections starts here */
+
+.container h2{
+    padding-left: 60px;
+    padding-top: 50px;
+    color: rgb(149, 255, 0);
+}
+
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(149, 255, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(149, 255, 0);
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/* contact ends here*/
+
+footer{
+    background-color: rgb(149, 255, 0);
+    color: black;
+    flex: 1 1 100%;
+    padding: 13px;
+}
+
+
+/* media queries for tablet screens 800px or smaller */
+@media screen and (max-width: 800px){
+
+    body{
+        background-color: #333;
+    }
+
+    header{
+        
+        height: 300px;
+        background-image: url(../images/home.png);
+    }
+
+    nav a:link, nav a:visited{
+    
+        padding: 10px 20px;
+        margin-right: 20px;
+    
+}
+
+main{
+
+    flex: 1 1 60%; 
+}
+
+aside{
+    flex: 1 1 40%; 
+
+}
+
+} 
+
+/* media queries for mobile screens 600px or smaller */
+@media screen and (max-width: 600px){
+
+    body{
+        background-color: yellow;
+    }
+
+    header{
+        
+        height: 100px;
+        background-image: url(../images/home.png);
+        
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    nav a:link, nav a:visited{
+
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+main, aside{
+    padding: 20px;
+}
+
+
+footer{
+    text-align: center;
+
+}
+
+}
